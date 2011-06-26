@@ -8,7 +8,7 @@ use Time::Piece ();
 @EXPORT = @Time::Piece::EXPORT;
 %EXPORT_TAGS = %Time::Piece::EXPORT_TAGS;
 
-$VERSION = '0.11';
+$VERSION = '0.12';
 
 use overload '""' => \&iso,
              cmp  => \&str_compare;
@@ -130,16 +130,17 @@ Time::Piece.
 
 =head1 SUPPORT
 
-This module is stored in an open repository at the following address:
+This module is stored in an open L<GitHub
+repository|http://github.com/theory/time-piece-iso/>. Feel free to fork and
+contribute!
 
-L<https://svn.kineticode.com/Time-Piece-ISO/trunk/>
-
-Patches against Time::Piece::ISO are welcome. Please send bug reports to
-<bug-time-piece-iso@rt.cpan.org>.
+Please file bug reports via L<GitHub
+Issues|http://github.com/theory/time-piece-iso/issues/> or by sending mail to
+L<bug-Time-Piece-ISO@rt.cpan.org|mailto:bug-Time-Piece-ISO@rt.cpan.org>.
 
 =head1 AUTHOR
 
-David Wheeler <david@justatheory.com>, extending Matt Seargent's
+David E. Wheeler <david@justatheory.com>, extending Matt Seargent's
 <matt@seargent.org> L<Time::Piece|Time::Piece> module.
 
 =head1 SEE ALSO
@@ -160,7 +161,7 @@ Time::Piece::ISO whenever possible.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2002-2008, David Wheeler. Some Rights Reserved.
+Copyright (c) 2002-2011, David E. Wheeler. Some Rights Reserved.
 
 This module is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
